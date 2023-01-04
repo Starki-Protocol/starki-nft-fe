@@ -2,10 +2,11 @@
 
 :root {
   --white: #ceddef;
-  --bright-blue: #fd49ee;
+  --bright-pink: #fd49ee;
   --off-black: #292b2f;
   --dark-blue: #282872;
   --dark-blue-opaque: #243c7f;
+  background-color: #100d20;
 }
 * {
   box-sizing: border-box;
@@ -21,7 +22,7 @@ li,
 button {
   text-decoration: none;
   font-weight: 500;
-  color: var(--bright-blue);
+  color: var(--bright-pink);
 }
 nav {
   width: 100%;
@@ -58,13 +59,13 @@ button:hover {
   width: 40%;
   min-width: 190px;
   height: 50%;
-  background-color: var(--bright-blue);
+  background-color: var(--bright-pink);
   color: var(--white);
 }
 .regular-button {
   border-radius: 50px;
   height: 5vh;
-  background-color: var(--bright-blue);
+  background-color: var(--bright-pink);
   color: var(--white);
 }
 .header-button {
@@ -197,7 +198,7 @@ button:hover {
 .mint-content h1 {
   display: inline-block;
   text-shadow: 8px 6px 8px rgba(255, 255, 255, 0.128);
-  background: linear-gradient(to right, var(--bright-blue) -30%, #e78bfe 100%);
+  background: linear-gradient(to right, var(--bright-pink) -30%, #e78bfe 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -220,7 +221,7 @@ button:hover {
 }
 
 .mint-title {
-  color: var(--bright-blue);
+  color: var(--bright-pink);
   font-weight: bold;
   text-shadow: 0px 0px 6px #5067ab;
   font-size: xx-large;
@@ -259,7 +260,7 @@ button:hover {
     rgba(252, 176, 69, 0) 100%
   );
   box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.098);
-  text-shadow: 0px 0px 10px var(--bright-blue);
+  text-shadow: 0px 0px 10px var(--bright-pink);
   backdrop-filter: blur(5px);
 }
 .about-header {
@@ -317,7 +318,7 @@ button:hover {
   height: 10%;
 }
 .about-container span {
-  color: var(--bright-blue);
+  color: var(--bright-pink);
   font-weight: bold;
 }
 /* CAROUSEL -----------------------*/
@@ -382,7 +383,7 @@ button:hover {
   font-size: 280%;
   font-weight: bold;
   padding-bottom: 4%;
-  color: var(--bright-blue);
+  color: var(--bright-pink);
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.224);
 }
 .footer-description {
@@ -507,5 +508,5 @@ button:hover {
 }
 .notification a {
   text-decoration: none;
-  color: var(--bright-blue);
+  color: var(--bright-pink);
 }
