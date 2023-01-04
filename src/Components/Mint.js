@@ -59,7 +59,7 @@ const Mint = () => {
           )}
         </div>
       </div>
-      {window.screen.availWidth < 820 ? null : <Clipper />}
+      {window.screen.availWidth < 821 ? null : <Clipper />}
     </div>
   );
 };
