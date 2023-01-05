@@ -33,7 +33,7 @@ const Connect = () => {
         )
       ) : (
         <button className="connect-button">
-          {address.slice(0, 6)}...{address.slice(address.length - 4)}
+          {address.slice(0, 5)}...{address.slice(address.length - 3)}
         </button>
       )}
     </>

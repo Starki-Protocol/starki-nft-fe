@@ -12,8 +12,7 @@ const Footer = () => {
         <p className="footer-title">Join our discord!</p>
         <p className="footer-description">
           Join us to get the latest news and updates and meet up with the fellow
-          maxis! Also you can follow us on twitter and follow our latest
-          announcements!
+          maxis!
         </p>
         <div className="footer-socials">
           <motion.a

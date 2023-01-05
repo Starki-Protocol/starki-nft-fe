@@ -36,14 +36,14 @@ const Mint = () => {
       {notification}
       <div className="mint-container">
         <div className="mint-content">
-          <h1 className="mint-max">Hey !</h1>
-          <h1 className="mint-maxi"> This is Starki</h1>
-          <h1 className="mint-arbimaxi">and I'm a Stark Maxi!</h1>
+          <h1 className="mint-hey">Hey !</h1>
+          <h1 className="mint-starki"> This is Starki</h1>
+          <h1 className="mint-starkmaxi">and I'm a Stark Maxi!</h1>
 
           {contractAddress ? (
             <>
               <>
-                <div className="mint-title">Coming Soon.. </div>
+                <div className="mint-title">Coming Soon... </div>
                 <motion.button
                   initial={{ y: 0, x: 0 }}
                   whileHover={{ y: -10, x: -10 }}
