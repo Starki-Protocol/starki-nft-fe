@@ -153,7 +153,7 @@ const Mint = () => {
                     ? "Please switch to mainnet and refresh the page ! "
                     : proof.length === 0
                     ? "Not Whitelisted"
-                    : `${totalSupply}/650 Minted !`}
+                    : `${totalSupply}/650 Minted and you are whitelisted !`}
                 </div>
                 <motion.button
                   initial={{ y: 0, x: 0 }}
