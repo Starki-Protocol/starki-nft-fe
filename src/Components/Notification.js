@@ -26,7 +26,7 @@ const Notification = ({ data }) => {
           <a
             target="_blank"
             rel="noreferrer"
-            href={`https://testnet.starkscan.co/tx/${data.transaction_hash}`}
+            href={`https://starkscan.co/tx/${data.transaction_hash}`}
           >
             View on StarkScan
           </a>
