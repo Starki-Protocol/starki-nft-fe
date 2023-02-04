@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react";
 
 const Clipper = () => {
   const ref = useRef(null);
-  const { x, y } = useFollowPointer(ref);
+  const { x } = useFollowPointer(ref);
 
   function useFollowPointer(ref) {
     const [point, setPoint] = useState({ x: 0, y: 0 });

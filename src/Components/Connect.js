@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { useAccount, useConnectors } from "@starknet-react/core";
+import { motion } from "framer-motion";
 
 import "../App.css";
 import { braavoslogo, argentxlogo } from "../Images";
-
 const Connect = () => {
+  const { address, status } = useAccount();
+  const { connect, connectors, disconnect, refresh } = useConnectors();
   const [isOpen, setIsOpen] = useState(false);
 
-  const { account, address, status } = useAccount();
-  const { connect, connectors, disconnect } = useConnectors();
+  useEffect(() => {
+    const interval = setInterval(refresh, 5000);
+    return () => clearInterval(interval);
+  }, [refresh]);
 
   return (
     <>
-      {status == "connected" ? (
+      {status === "connected" ? (
         <div className="connect-container">
           <button className="connect-button">
             {address.slice(0, 5)}...{address.slice(address.length - 3)}
@@ -32,8 +35,6 @@ const Connect = () => {
             className="connect-button"
             onClick={() => {
               setIsOpen(!isOpen);
-              // connect(connectors[0]);
-              // console.log(status, account);
             }}
           >
             Connect Wallet
@@ -69,7 +70,12 @@ const Connect = () => {
               }}
               className="connect-item"
             >
-              <img className="connect-logo" src={braavoslogo}></img> Braavos
+              <img
+                alt="braavos"
+                className="connect-logo"
+                src={braavoslogo}
+              ></img>{" "}
+              Braavos
             </button>
             <button
               onClick={() => {
@@ -79,7 +85,12 @@ const Connect = () => {
               }}
               className="connect-item"
             >
-              <img className="connect-logo" src={argentxlogo}></img>Argent X
+              <img
+                alt="argentx"
+                className="connect-logo"
+                src={argentxlogo}
+              ></img>
+              Argent X
             </button>
           </motion.div>
         </motion.div>
