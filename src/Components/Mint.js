@@ -170,8 +170,7 @@ const Mint = () => {
                     status === "disconnected" ||
                     loading ||
                     proof.length === 0 ||
-                    chain.id !== "0x534e5f4d41494e" ||
-                    true
+                    chain.id !== "0x534e5f4d41494e"
                       ? true
                       : false
                   }
