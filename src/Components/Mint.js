@@ -98,28 +98,15 @@ const Mint = () => {
       contractAddress:
         "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
       entrypoint: "approve",
-      calldata: [contractAddress, 4000000000000000, 0],
+      calldata: [contractAddress, 8000000000000000, 0],
     },
     {
       contractAddress: contractAddress,
-      entrypoint: "wlMint",
-      calldata: [proof.length, ...proof],
+      entrypoint: "publicMint",
+      calldata: [],
     },
   ];
 
-  // [
-  //   {
-  //     contractAddress:
-  //       "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7",
-  //     entrypoint: "approve",
-  //     calldata: [contractAddress, 4000000000000000, 0],
-  //   },
-  //   {
-  //     contractAddress: contractAddress,
-  //     entrypoint: "publicMint",
-  //     calldata: [],
-  //   },
-  // ]
   const { execute, loading } = useStarknetExecute({ calls });
 
   const { data } = useTransactionReceipt({ hash, watch: true });
@@ -151,9 +138,7 @@ const Mint = () => {
                     ? "Please Connect Your Wallet"
                     : chain.id !== "0x534e5f4d41494e"
                     ? "Please switch to mainnet and refresh the page ! "
-                    : proof.length === 0
-                    ? "Not Whitelisted"
-                    : `${totalSupply}/650 Minted and you are whitelisted !`}
+                    : `${totalSupply}/650 Minted !`}
                 </div>
                 <motion.button
                   initial={{ y: 0, x: 0 }}
@@ -169,7 +154,6 @@ const Mint = () => {
                   disabled={
                     status === "disconnected" ||
                     loading ||
-                    proof.length === 0 ||
                     chain.id !== "0x534e5f4d41494e"
                       ? true
                       : false
