@@ -34,7 +34,6 @@ const Mint = () => {
 
   return (
     <div className="mint-bg">
-      {notification}
       <div className="mint-container">
         <div className="mint-content">
           <h1 className="mint-hey">Hey !</h1>
