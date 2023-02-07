@@ -3,6 +3,7 @@ import logo from "./logo.png";
 import bgspace from "./bg-space.png";
 import braavoslogo from "./braavoslogo.svg";
 import argentxlogo from "./argentxlogo.svg";
+import mintsquarelogo from "./mintsquarelogo.svg";
 import c1 from "./1.png";
 import c2 from "./2.png";
 import c3 from "./3.png";
@@ -37,4 +38,5 @@ export {
   carouselArray,
   braavoslogo,
   argentxlogo,
+  mintsquarelogo,
 };

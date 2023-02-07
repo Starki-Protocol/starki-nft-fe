@@ -28,6 +28,7 @@ const Header = () => {
                 href="https://discord.gg"
                 className="fa-brands fa-discord nav-socials-logo "
               ></a> */}
+
               <Connect />
             </div>
           </ul>

@@ -11,6 +11,7 @@ import {
 import config from "../Constants/config.json";
 import Clipper from "./Clipper";
 import Notification from "./Notification";
+import { mintsquarelogo } from "../Images";
 import "../App.css";
 
 // Import the functions you need from the SDKs you need
@@ -134,41 +135,18 @@ const Mint = () => {
             <>
               <>
                 <div className="mint-title">
-                  {status === "disconnected"
-                    ? "Please Connect Your Wallet"
-                    : chain.id !== "0x534e5f4d41494e"
-                    ? "Please switch to mainnet and refresh the page ! "
-                    : `${totalSupply}/650 Minted !`}
+                  {`${totalSupply} Starkis have found their owners!`}
                 </div>
-                <motion.button
+                <motion.a
                   initial={{ y: 0, x: 0 }}
                   whileHover={{ y: -10, x: -10 }}
-                  transition={{ duration: 0.1 }}
+                  transition={{ duration: 0.2 }}
+                  href="https://mintsquare.io/collection/starknet/0x01c7607659020c0f128fe677a1d7be9c3b9f66cedfe50296aca146b003875ee5"
                   className="regular-button mint-button"
-                  onClick={() =>
-                    execute().then((tx) => {
-                      console.log(tx);
-                      setHash(tx.transaction_hash);
-                    })
-                  }
-                  disabled={
-                    status === "disconnected" ||
-                    loading ||
-                    chain.id !== "0x534e5f4d41494e"
-                      ? true
-                      : false
-                  }
                 >
-                  {loading ? (
-                    <motion.i
-                      animate={{ rotate: [0, 385, -385] }}
-                      transition={{ repeat: Infinity, duration: 2 }}
-                      className="fa-solid fa-rotate"
-                    ></motion.i>
-                  ) : (
-                    "Mint!"
-                  )}
-                </motion.button>
+                  Get a Starki on Mintsquare
+                  <img className="mintsquare-logo" src={mintsquarelogo}></img>
+                </motion.a>
               </>
             </>
           ) : (

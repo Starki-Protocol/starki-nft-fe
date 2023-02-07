@@ -159,6 +159,10 @@ button:hover {
   top: 0;
   width: 100%;
 }
+.mintsquare-logo {
+  height: 100%;
+  padding: 5px;
+}
 /* MINT-HERO CLIPPER ----------------------------------------- */
 
 .clipper-container {
@@ -251,10 +255,17 @@ button:hover {
   margin-top: -15px;
 }
 .mint-button {
-  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
   opacity: 0.98;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   object-fit: fill;
+  text-decoration: none;
+}
+.mint-button:hover {
+  background-color: #ff3900;
 }
 
 .mint-title {

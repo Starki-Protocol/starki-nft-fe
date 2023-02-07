@@ -15,7 +15,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="about-title">
-              650 unique Starkis will be released on Starknet
+              559 unique Starkis were released on Starknet
             </p>
 
             <p className="about-story">
