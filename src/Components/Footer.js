@@ -21,12 +21,12 @@ const Footer = () => {
             href="https://twitter.com/StarkiNFT"
             className="fa-brands fa-twitter footer-socials-logo"
           ></motion.a>
-          {/* <motion.a
+          <motion.a
             whileHover={{ scale: 2 }}
             transition={{ duration: 0.5 }}
-            href="https://discord.gg/"
+            href="https://discord.gg/Cggq6K5g"
             className="fa-brands fa-discord footer-socials-logo"
-          ></motion.a> */}
+          ></motion.a>
         </div>
       </div>
     </div>

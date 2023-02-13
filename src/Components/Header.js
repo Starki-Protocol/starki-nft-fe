@@ -24,10 +24,10 @@ const Header = () => {
                 href="https://twitter.com/StarkiNFT"
                 className="fa-brands fa-twitter nav-socials-logo "
               ></a>
-              {/* <a
-                href="https://discord.gg"
+              <a
+                href="https://discord.gg/Cggq6K5g"
                 className="fa-brands fa-discord nav-socials-logo "
-              ></a> */}
+              ></a>
 
               <Connect />
             </div>
