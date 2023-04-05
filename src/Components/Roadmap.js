@@ -20,9 +20,7 @@ const Roadmap = () => {
           <div className="roadmap-item-container">
             <div className="roadmap-item">
               ENDGAME
-              <p className="roadmap-text">
-                Launching Starki Protocol (Starki is a no-loss earning protocol)
-              </p>
+              <p className="roadmap-text">Launching Starki Protocol</p>
               <p className="roadmap-text">
                 (Starki is a no-loss earning protocol)
               </p>
