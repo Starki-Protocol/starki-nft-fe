@@ -25,7 +25,7 @@ const Header = () => {
                 className="fa-brands fa-twitter nav-socials-logo "
               ></a>
               <a
-                href="https://discord.gg/hDjwsyAN"
+                href="https://discord.gg/p4aZ76PpRF"
                 className="fa-brands fa-discord nav-socials-logo "
               ></a>
 

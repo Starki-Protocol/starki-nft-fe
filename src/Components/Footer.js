@@ -24,7 +24,7 @@ const Footer = () => {
           <motion.a
             whileHover={{ scale: 2 }}
             transition={{ duration: 0.5 }}
-            href="https://discord.gg/hDjwsyAN"
+            href="https://discord.gg/p4aZ76PpRF"
             className="fa-brands fa-discord footer-socials-logo"
           ></motion.a>
         </div>
